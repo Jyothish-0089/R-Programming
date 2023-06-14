@@ -1,0 +1,15 @@
+data("iris")
+icluster <- kmeans(iris[1:4],centers = 3,nstart = 20)
+table(icluster$cluster,iris$Species)
+
+barplot(icluster$cluster,names.arg = iris$Species)
+
+pca <- princomp(iris[1:4])
+pca
+
+
+dataframy<-data.frame(c("A","B","C"),Ages<-c(19,20,18),bool<-c(T,T,F))
+dataframy
+
+jcluster <- hclust(dist(iris[,3:4]))
+plot(jcluster)
