@@ -1,0 +1,14 @@
+matrixx<-matrix(c(1:9),nrow=3,ncol=3)
+print(matrixx)
+
+arrayy<-array(c(1:9),dim=c(3,3,2),dimnames=list(c("R1","R2","R3"),c("C1","C2","C3"),c("Chapter-1","Chapter-2")))
+print(arrayy)
+
+factorr<-factor(c("red","green","red","yellow","pink","yellow","green","pink"),levels = c("red","green","pink","yellow"),ordered = TRUE)
+print(factorr)
+
+listt<-list(name="Aquamarine",age=19,height=179,fav_colors<-c("purple","violet","black"))
+print(listt)
+
+dataframee<-data.frame(Characters=c("Raiden_Shogun","Ayaka","Yoimiya"),Attack=c(1987,2034,2242),Defense=c(342,245,122))
+print(dataframee)
