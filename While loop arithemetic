@@ -1,0 +1,25 @@
+choice = 0
+while(choice!=5){
+  print("1.ADDITION 2.SUBTRACTION 3.PRODUCT 4.DIVISION 5.BREAK")
+  choice <- scan(what = double())
+  if(choice>=5){
+    break
+  }
+  print("Enter first number: ")
+  a <- scan(what = double())
+  print("Enter second number: ")
+  b <- scan(what = double())
+  
+  if(choice == 1){
+    print(a+b)
+  }
+  if(choice == 2){
+    print(a-b)
+  }
+  if(choice == 3){
+    print(a*b)
+  }
+  if(choice == 4){
+    print(a/b)
+  }
+}
