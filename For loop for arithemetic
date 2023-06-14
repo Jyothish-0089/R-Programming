@@ -1,0 +1,27 @@
+for(i in range(1,10)){
+  print("1.ADDITION 2.SUBTRACTION 3.PRODUCT 4.DIVISION 5.BREAK")
+  choice <- scan(what = double())
+  print("Enter first number: ")
+  a <- scan(what = double())
+  print("Enter second number: ")
+  b <- scan(what = double())
+  if(choice == 1){
+    sum<-a+b
+    print(sum)
+  }
+  if(choice == 2){
+    diff<-a-b
+    print(diff)
+  }
+  if(choice == 3){
+    prod<-a*b
+    print(prod)
+  }
+  if(choice == 4){
+    rem<-a/b
+    print(rem)
+  }
+  if(choice == 5){
+    break
+  }
+}
