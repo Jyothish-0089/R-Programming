@@ -1,0 +1,18 @@
+data("iris")
+hist(iris$Sepal.Length,col = 'violet',main = 'Sepal Length',xlab = 'Length',ylab = 'Frequency')
+icluster <- kmeans(iris[,1:4],3,nstart = 20)
+icluster
+table(icluster$cluster,iris$Species)
+
+mea<-kmeans(iris[,1:4],centers = 3)
+table(mea$cluster,iris$Species)
+
+jcluster <- hclust(dist(iris[,1:4]))
+plot(jcluster)
+cut<-cutree(jcluster,3)
+table(cut,iris$Species)
+
+pca <- princomp(iris[1:4])
+pca
+hist(pca$sdev,col = 'yellow',main='Princpal Component Analysis')
+
