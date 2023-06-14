@@ -1,0 +1,29 @@
+my_function<-function(){
+  print("This better work..")
+}
+my_function()
+
+
+
+
+my_function_argument<-function(fname){
+  paste(fname,"Shogun")
+}
+my_function_argument("Raiden")
+
+
+
+
+my_function_argument<-function(fname){
+  paste(fname,"Shogun")
+}
+name <- scan(what = " ")
+my_function_argument(name)
+
+
+
+f_nested<-function(x,y){
+  sum<-x+y
+  return(sum)
+}
+f_nested(f_nested(1,2),f_nested(3,4))
