@@ -1,0 +1,10 @@
+data("iris")
+vec1 <- sort(iris$Sepal.Length, decreasing = F)
+vec2 <- sort(iris$Sepal.Width, decreasing = F)
+table(iris$Species,vec1)
+table(iris$Species,vec2)
+
+vec3 <- sort(iris$Sepal.Length,decreasing = T)
+vec4 <- sort(iris$Sepal.Width,decreasing = T)
+table(iris$Species,vec3)
+table(iris$Species,vec4)
